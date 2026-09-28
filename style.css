@@ -6415,7 +6415,11 @@ button {
         background-size: 48px 48px;
     }
 
-    /* PHOTO */
+
+    /* =========================
+       PHOTO
+    ========================= */
+
     #page1 .polaroid {
         width: 48vw;
         left: 5%;
@@ -6456,7 +6460,10 @@ button {
     }
 
 
-    /* TRAITS NOTE */
+    /* =========================
+       TRAITS NOTE
+    ========================= */
+
     #page1 .traits-note {
         width: 78px;
         left: 2%;
@@ -6479,16 +6486,16 @@ button {
     }
 
 
-    /* CALENDAR */
+    /* =========================
+       CALENDAR
+    ========================= */
+
     #page1 .calendar {
         width: 57vw;
         right: 2%;
         top: 42%;
 
-        padding:
-            29px
-            8px
-            9px;
+        padding: 29px 8px 9px;
 
         transform: rotate(1deg);
     }
@@ -6537,7 +6544,10 @@ button {
     }
 
 
-    /* ENVELOPE */
+    /* =========================
+       ENVELOPE
+    ========================= */
+
     #page1 .envelope {
         width: 118px;
         height: 64px;
@@ -6572,17 +6582,25 @@ button {
     }
 
 
-    /* CAKE */
-    #page1 .birthday-cake {
-        left: 31%;
-        bottom: 5%;
+    /* =========================
+       CAKE — FIXED POSITION
+    ========================= */
 
-        transform: scale(.32);
+    #page1 .birthday-cake {
+        left: 50%;
+        bottom: 8.5%;
+
+        transform: translateX(-50%) scale(.27);
         transform-origin: bottom center;
+
+        z-index: 7;
     }
 
 
-    /* DECORATIONS */
+    /* =========================
+       DECORATIONS
+    ========================= */
+
     #page1 .flowers-left {
         bottom: 31%;
         font-size: 14px;
@@ -6624,21 +6642,22 @@ button {
     }
 
 
-    /* NEXT BUTTON */
+    /* =========================
+       NEXT BUTTON
+    ========================= */
+
     #page1 .next-button {
         width: 55%;
         min-width: 0;
 
         right: 3%;
-        bottom: 2%;
+        bottom: 1.5%;
 
-        padding:
-            8px
-            35px
-            8px
-            10px;
+        padding: 8px 35px 8px 10px;
 
         font-size: 13px;
+
+        z-index: 20;
 
         box-shadow:
             4px 4px 0 rgba(23,55,94,.14);
