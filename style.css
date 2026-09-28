@@ -6402,7 +6402,7 @@ button {
 }
 
 /* =========================================================
-   iPHONE FIX — PAGE 1 ONLY
+   iPHONE FIX — PAGE 1 ONLY — FINAL
 ========================================================= */
 
 @media (max-width: 700px) {
@@ -6494,9 +6494,7 @@ button {
         width: 57vw;
         right: 2%;
         top: 42%;
-
         padding: 29px 8px 9px;
-
         transform: rotate(1deg);
     }
 
@@ -6551,21 +6549,16 @@ button {
     #page1 .envelope {
         width: 118px;
         height: 64px;
-
         right: 4%;
         bottom: 15%;
-
         transform: rotate(-2deg);
     }
 
     #page1 .love-note {
         width: 98px;
-
         left: 10px;
         top: -31px;
-
         padding: 5px;
-
         font-size: 9px;
         line-height: .95;
     }
@@ -6573,27 +6566,55 @@ button {
     #page1 .wax-seal {
         width: 24px;
         height: 24px;
-
         bottom: 4px;
-
         border-width: 2px;
-
         font-size: 15px;
     }
 
 
     /* =========================
-       CAKE — FIXED POSITION
+       CAKE — FIXED FOR IPHONE
     ========================= */
 
     #page1 .birthday-cake {
-        left: 50%;
-        bottom: 8.5%;
+        position: absolute !important;
 
-        transform: translateX(-50%) scale(.27);
-        transform-origin: bottom center;
+        width: 110px !important;
+        height: 92px !important;
 
-        z-index: 7;
+        left: 50% !important;
+        right: auto !important;
+
+        bottom: 7.5% !important;
+
+        transform: translateX(-50%) !important;
+        transform-origin: center !important;
+
+        z-index: 15 !important;
+    }
+
+    #page1 .birthday-cake .cake-top {
+        width: 82px !important;
+        height: 25px !important;
+
+        left: 14px !important;
+        bottom: 36px !important;
+    }
+
+    #page1 .birthday-cake .cake-bottom {
+        width: 100px !important;
+        height: 38px !important;
+
+        left: 5px !important;
+        bottom: 0 !important;
+    }
+
+    #page1 .birthday-cake .candles {
+        left: 50% !important;
+        bottom: 59px !important;
+
+        transform: translateX(-50%) scale(.55) !important;
+        transform-origin: bottom center !important;
     }
 
 
@@ -6647,17 +6668,17 @@ button {
     ========================= */
 
     #page1 .next-button {
-        width: 55%;
-        min-width: 0;
+        width: 55% !important;
+        min-width: 0 !important;
 
-        right: 3%;
-        bottom: 1.5%;
+        right: 3% !important;
+        bottom: 1.5% !important;
 
         padding: 8px 35px 8px 10px;
 
         font-size: 13px;
 
-        z-index: 20;
+        z-index: 30 !important;
 
         box-shadow:
             4px 4px 0 rgba(23,55,94,.14);
