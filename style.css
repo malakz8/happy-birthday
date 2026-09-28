@@ -6401,44 +6401,255 @@ button {
 
 }
 
-
 /* =========================================================
    iPHONE FIX — PAGE 1 ONLY
-   Keeps desktop design unchanged
 ========================================================= */
+
 @media (max-width: 700px) {
-    #page1 .scrapbook { width:100%; height:100dvh; min-height:100dvh; overflow:hidden; background-size:48px 48px; }
-    #page1 .polaroid { width:50vw; left:5%; top:5%; padding:7px 7px 30px; transform:rotate(-3deg); }
-    #page1 .polaroid img { height:34vh; object-fit:cover; object-position:center; }
-    #page1 .photo-tape { width:78px; height:20px; top:-10px; }
-    #page1 .photo-doodle { font-size:28px; }
-    #page1 .heart-a { left:3%; top:9%; }
-    #page1 .heart-b { right:4%; top:31%; }
-    #page1 .heart-c { right:3%; bottom:7%; font-size:24px; }
-    #page1 .traits-note { width:88px; left:2%; bottom:28%; padding:10px 8px; font-size:11px; line-height:1.08; transform:rotate(-7deg); }
-    #page1 .traits-note span { margin-bottom:2px; font-size:18px; }
-    #page1 .traits-note::before { width:45px; height:15px; top:-8px; }
-    #page1 .calendar { width:59vw; right:2%; top:43%; padding:34px 10px 12px; transform:rotate(1deg); }
-    #page1 .calendar-top-text { top:8px; font-size:11px; }
-    #page1 .calendar h1 { margin:0 0 5px; padding-bottom:4px; font-size:20px; }
-    #page1 .week { margin-bottom:2px; padding-bottom:3px; font-size:7px; }
-    #page1 .days { gap:1px 0; font-size:10px; }
-    #page1 .days > span { height:16px; }
-    #page1 .birthday-number { font-size:10px; }
-    #page1 .birthday-heart { width:27px; height:25px; }
-    #page1 .calendar-message { margin-top:5px; padding-top:5px; font-size:10px; line-height:1; }
-    #page1 .envelope { width:137px; height:72px; right:3%; bottom:17%; transform:rotate(-2deg); }
-    #page1 .love-note { width:113px; left:12px; top:-35px; padding:6px; font-size:11px; line-height:1; }
-    #page1 .wax-seal { width:27px; height:27px; bottom:5px; border-width:2px; font-size:17px; }
-    #page1 .birthday-cake { left:35%; bottom:7%; transform:scale(.40); transform-origin:bottom center; }
-    #page1 .flowers-left { bottom:31%; font-size:17px; }
-    #page1 .flowers-bottom { left:18%; bottom:1%; font-size:17px; }
-    #page1 .doodle { font-size:30px; }
-    #page1 .d1 { left:1%; top:17%; }
-    #page1 .d2 { left:39%; bottom:25%; }
-    #page1 .d3 { right:2%; top:8%; }
-    #page1 .d4 { left:27%; bottom:2%; }
-    #page1 .d5 { right:2%; bottom:18%; }
-    #page1 .next-button { width:54%; min-width:0; right:3%; bottom:2.5%; padding:9px 39px 9px 12px; font-size:14px; box-shadow:4px 5px 0 rgba(23,55,94,.14); }
-    #page1 .next-button span { width:29px; height:29px; right:5px; font-size:20px; }
+
+    #page1 .scrapbook {
+        width: 100%;
+        height: 100dvh;
+        min-height: 100dvh;
+        overflow: hidden;
+        background-size: 48px 48px;
+    }
+
+    /* PHOTO */
+    #page1 .polaroid {
+        width: 48vw;
+        left: 5%;
+        top: 4%;
+        padding: 7px 7px 28px;
+        transform: rotate(-3deg);
+    }
+
+    #page1 .polaroid img {
+        width: 100%;
+        height: 31vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #page1 .photo-tape {
+        width: 75px;
+        height: 19px;
+        top: -9px;
+    }
+
+    #page1 .photo-doodle {
+        font-size: 26px;
+    }
+
+    #page1 .heart-a {
+        left: 3%;
+        top: 9%;
+    }
+
+    #page1 .heart-b {
+        right: 3%;
+        top: 30%;
+    }
+
+    #page1 .heart-c {
+        display: none;
+    }
+
+
+    /* TRAITS NOTE */
+    #page1 .traits-note {
+        width: 78px;
+        left: 2%;
+        bottom: 30%;
+        padding: 8px 7px;
+        font-size: 10px;
+        line-height: 1.03;
+        transform: rotate(-7deg);
+    }
+
+    #page1 .traits-note span {
+        margin-bottom: 1px;
+        font-size: 16px;
+    }
+
+    #page1 .traits-note::before {
+        width: 40px;
+        height: 14px;
+        top: -7px;
+    }
+
+
+    /* CALENDAR */
+    #page1 .calendar {
+        width: 57vw;
+        right: 2%;
+        top: 42%;
+
+        padding:
+            29px
+            8px
+            9px;
+
+        transform: rotate(1deg);
+    }
+
+    #page1 .calendar-top-text {
+        top: 7px;
+        font-size: 9px;
+    }
+
+    #page1 .calendar h1 {
+        margin: 0 0 4px;
+        padding-bottom: 3px;
+        font-size: 18px;
+    }
+
+    #page1 .week {
+        margin-bottom: 2px;
+        padding-bottom: 2px;
+        font-size: 6px;
+    }
+
+    #page1 .days {
+        gap: 0;
+        font-size: 9px;
+    }
+
+    #page1 .days > span {
+        height: 14px;
+    }
+
+    #page1 .birthday-number {
+        font-size: 9px;
+    }
+
+    #page1 .birthday-heart {
+        width: 24px;
+        height: 22px;
+    }
+
+    #page1 .calendar-message {
+        margin-top: 4px;
+        padding-top: 4px;
+        font-size: 8px;
+        line-height: 1;
+        white-space: normal;
+    }
+
+
+    /* ENVELOPE */
+    #page1 .envelope {
+        width: 118px;
+        height: 64px;
+
+        right: 4%;
+        bottom: 15%;
+
+        transform: rotate(-2deg);
+    }
+
+    #page1 .love-note {
+        width: 98px;
+
+        left: 10px;
+        top: -31px;
+
+        padding: 5px;
+
+        font-size: 9px;
+        line-height: .95;
+    }
+
+    #page1 .wax-seal {
+        width: 24px;
+        height: 24px;
+
+        bottom: 4px;
+
+        border-width: 2px;
+
+        font-size: 15px;
+    }
+
+
+    /* CAKE */
+    #page1 .birthday-cake {
+        left: 31%;
+        bottom: 5%;
+
+        transform: scale(.32);
+        transform-origin: bottom center;
+    }
+
+
+    /* DECORATIONS */
+    #page1 .flowers-left {
+        bottom: 31%;
+        font-size: 14px;
+    }
+
+    #page1 .flowers-bottom {
+        left: 18%;
+        bottom: 1%;
+        font-size: 14px;
+    }
+
+    #page1 .doodle {
+        font-size: 25px;
+    }
+
+    #page1 .d1 {
+        left: 1%;
+        top: 17%;
+    }
+
+    #page1 .d2 {
+        left: 38%;
+        bottom: 24%;
+    }
+
+    #page1 .d3 {
+        right: 2%;
+        top: 8%;
+    }
+
+    #page1 .d4 {
+        left: 27%;
+        bottom: 2%;
+    }
+
+    #page1 .d5 {
+        right: 2%;
+        bottom: 18%;
+    }
+
+
+    /* NEXT BUTTON */
+    #page1 .next-button {
+        width: 55%;
+        min-width: 0;
+
+        right: 3%;
+        bottom: 2%;
+
+        padding:
+            8px
+            35px
+            8px
+            10px;
+
+        font-size: 13px;
+
+        box-shadow:
+            4px 4px 0 rgba(23,55,94,.14);
+    }
+
+    #page1 .next-button span {
+        width: 27px;
+        height: 27px;
+
+        right: 5px;
+
+        font-size: 18px;
+    }
 }
